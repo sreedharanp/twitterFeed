@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"
+  />
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <link href="css/style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Feed</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-top navbar-inverse navbar-fixed-top">
+    <div class="container-fluid feed-header">
+      <div class="navbar-header padding-10">
+        <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed"
+          type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a href="#" class="navbar-brand logo"><i class="fa fa-leaf" aria-hidden="true"></i></a></div>
+      <div class="navbar-collapse collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-left padding-10 col-xs-12 col-md-3 col-sm-4">
+          <li class="top-icons"><a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></a></li>
+          <li class="top-icons"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+          <li class="top-icons"><a href="#"><i aria-hidden="true" class="fa fa-hashtag fa-1">&nbsp;#</i></a></li>
+        </ul>
+        <ul class="col-md-1 col-md-offset-2 col-sm-1 col-sm-offset-1 nav col-xs-2">
+          <li class="padding-10">
+            <a href="#" class="fa fa-twitter twitter-logo" aria-hidden="true"></a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right pull-right padding-10">
+
+          <li class="dropdown"> <a href="#" class="dropdown-toggle user" data-toggle="dropdown" style="float:right;"><i class="glyphicon glyphicon-user"></i></a>
+            <ul class="dropdown-menu drop-small">
+              <li><a href="">New followers</a></li>
+              <li><a href="">New emails</a></li>
+              <li><a href="">new tasks</a></li>
+              <li><a href="">More notifications</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-right top-search hidden-xs">
+          <div class="input-group input-group-sm">
+            <input type="text" id="search" class="form-control" placeholder="Search">
+            <label title="search" rel="tooltip" class="glyphicon glyphicon-search" for="search"></label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container box">
+    <div class="block col-lg-12">
+      <ul class="nav nav-tabs top-tabs" role="tablist">
+        <li role="presentation" class="active col-xs-12 col-sm-3 col-md-3">
+          <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+            <h5 class="text-light text-center">TWEETS</h5>
+            <h5 class="text-center"><strong>200</strong></h5>
+          </a>
+        </li>
+        <li class="col-xs-12 col-sm-3 col-md-3" role="presentation">
+          <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+            <h5 class="text-light text-center">PHOTOS/VIDEOS</h5>
+            <h5 class="text-center"><strong>200</strong></h5>
+          </a>
+        </li>
+        <li class="col-xs-12 col-sm-3 col-md-3" role="presentation">
+          <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+            <h5 class="text-light text-center">FOLLOWING</h5>
+            <h5 class="text-center"><strong>200</strong></h5>
+          </a>
+        </li>
+        <li class="col-xs-12 col-sm-3 col-md-3" role="presentation">
+          <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">
+            <h5 class="text-light text-center">FOLLOWERS</h5>
+            <h5 class="text-center"><strong>1M</strong></h5>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="block col-lg-12">
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+          <div class="row sep-blk">
+            <div class="col-sm-1 col-xs-2"><i class="fa fa-user user-main-left" aria-hidden="true"></i></div>
+            <div class="col-sm-11 col-xs-10">
+              <strong class="name">Kerem Suer</strong><span class="text-light"> @Kerem</span>
+              <h5 class="pull-right text-light">2m</h5>
+              <br/>
+              <h5 class="line-22">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet, ligula ac euismod blandit, turpis
+                nulla pellentesque dui, vel eleifend mauris lectus sit amet purus. Vestibulum vitae diam metus. Duis id mi
+                tempus metus pharetra ultricies non sed elit. Donec eu dignissim tellus, et ultrices leo. Fusce convallis
+                ex vel ligula rutrum</h5>
+              <i class="fa fa-share text-muted margin-r-10" aria-hidden="true" data-toggle="collapse" data-target="#forward" data-pointer="tooltip"
+                title="Forward"></i>
+              <i class="fa fa-star text-muted margin-r-10" aria-hidden="true" data-pointer="tooltip" title="Give Star"></i>
+              <i class="fa fa-refresh text-muted margin-r-10" aria-hidden="true" data-pointer="tooltip" title="Refresh"></i>
+              <i class="glyphicon glyphicon-option-horizontal text-muted" aria-hidden="true" data-pointer="tooltip" title="Options"></i>
+              <i class="fa fa-expand text-muted pull-right" aria-hidden="true" data-pointer="tooltip" title="Expand"></i>
+              <div id="forward" class="collapse user-feed">
+                <input type="email" placeholder="Enter email" id="#" class="form-control">
+                <button class="btn btn-info" type="button">SEND</button>
+              </div>
+            </div>
+          </div>
+          <div class="row margin-t-20 sep-blk">
+            <div class="col-sm-1 col-xs-2"><i class="fa fa-user user-main-left" aria-hidden="true"></i></div>
+            <div class="col-sm-11 col-xs-10">
+              <strong class="name">Kerem Suer</strong><span class="text-light"> @Kerem</span>
+              <h5 class="pull-right text-light">2m</h5>
+              <br/>
+              <h5 class="line-22">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet, ligula ac euismod blandit, turpis
+                nulla pellentesque dui, vel eleifend mauris lectus sit amet purus. Vestibulum vitae diam metus. Duis id mi
+                tempus metus pharetra ultricies non sed elit. Donec eu dignissim tellus, et ultrices leo. Fusce convallis
+                ex vel ligula rutrum</h5>
+              <i class="fa fa-share text-muted margin-r-10" aria-hidden="true" data-toggle="collapse" data-target="#forward" data-pointer="tooltip"
+                title="Forward"></i>
+              <i class="fa fa-star text-muted margin-r-10" aria-hidden="true" data-pointer="tooltip" title="Give Star"></i>
+              <i class="fa fa-refresh text-muted margin-r-10" aria-hidden="true" data-pointer="tooltip" title="Refresh"></i>
+              <i class="glyphicon glyphicon-option-horizontal text-muted" aria-hidden="true" data-pointer="tooltip" title="Options"></i>
+              <i class="fa fa-expand text-muted pull-right" aria-hidden="true" data-pointer="tooltip" title="Expand"></i>
+              <div id="forward" class="collapse user-feed">
+                <input type="email" placeholder="Enter email" id="#" class="form-control">
+                <button class="btn btn-info" type="button">SEND</button>
+              </div>
+            </div>
+          </div>
+          <div class="row margin-t-20 sep-blk">
+            <div class="col-sm-1 col-xs-2"><i class="fa fa-user user-main-left" aria-hidden="true"></i></div>
+            <div class="col-sm-11 col-xs-10">
+              <strong class="name">Kerem Suer</strong><span class="text-light"> @Kerem</span>
+              <h5 class="pull-right text-light">2m</h5>
+              <br/>
+
+              <div class="col-sm-12" style="padding-top: 15px; padding-bottom:15px;">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+                </div>
+              </div>
+              <br />
+              <i class="fa fa-share text-muted margin-r-10" aria-hidden="true" data-toggle="collapse" data-target="#forward" data-pointer="tooltip"
+                title="Forward"></i>
+              <i class="fa fa-star text-muted margin-r-10" aria-hidden="true" data-pointer="tooltip" title="Give Star"></i>
+              <i class="fa fa-refresh text-muted margin-r-10" aria-hidden="true" data-pointer="tooltip" title="Refresh"></i>
+              <i class="glyphicon glyphicon-option-horizontal text-muted" aria-hidden="true" data-pointer="tooltip" title="Options"></i>
+              <i class="fa fa-expand text-muted pull-right" aria-hidden="true" data-pointer="tooltip" title="Expand"></i>
+              <div id="forward" class="collapse user-feed">
+                <input type="email" placeholder="Enter email" id="#" class="form-control">
+                <button class="btn btn-info" type="button">SEND</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">2222222222</div>
+        <div role="tabpanel" class="tab-pane" id="messages">3333333333333</div>
+        <div role="tabpanel" class="tab-pane" id="settings">4444444444444444444</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
